@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17C77E71DD1759E1D3F1C46067BB593A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F963606C5E05B91A0505547FA67F2 /* ReplaceMe.swift */; };
 		379815BB059A87710AF0C5C4A0D1B9B8 /* Pods-DScrolViewDv_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C4839865819446B416AC71E5100D67 /* Pods-DScrolViewDv_Example-dummy.m */; };
+		3F440B0128667C7C00AFF325 /* DScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440AFD28667C7C00AFF325 /* DScrollView+.swift */; };
+		3F440B0228667C7C00AFF325 /* DScrollViewElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440AFE28667C7C00AFF325 /* DScrollViewElement.swift */; };
+		3F440B0328667C7C00AFF325 /* DScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440AFF28667C7C00AFF325 /* DScrollViewContainer.swift */; };
+		3F440B0428667C7C00AFF325 /* DScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440B0028667C7C00AFF325 /* DScrollView.swift */; };
 		4E8AE48DAF0FFB29C64D1B60FAB50105 /* Pods-DScrolViewDv_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03329125F95F43B879AAA26A6820BC22 /* Pods-DScrolViewDv_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BF70E53233B269053CB19C0FEF94A73 /* Pods-DScrolViewDv_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A30AF41EE61CB761017BF3F6C945E317 /* Pods-DScrolViewDv_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4B190D54DC5F5EFCBAE72B7B4819BF8 /* DScrolViewDv-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9B7BB8F99C9017EDA52996493E3D3 /* DScrolViewDv-dummy.m */; };
@@ -47,28 +50,31 @@
 		34AED893ECECBE07F833CBDAB145CD76 /* DScrolViewDv-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DScrolViewDv-umbrella.h"; sourceTree = "<group>"; };
 		396B81FD005F09473C0903DBC20C5047 /* DScrolViewDv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DScrolViewDv.debug.xcconfig; sourceTree = "<group>"; };
 		3AC9D7DF471F450A9C76855425A35022 /* Pods-DScrolViewDv_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DScrolViewDv_Example-Info.plist"; sourceTree = "<group>"; };
-		3EE785D0D9DBD9B2E2708A61085C8FE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		57A0464A6B097233087B212CF29DD9CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3EE785D0D9DBD9B2E2708A61085C8FE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F440AFD28667C7C00AFF325 /* DScrollView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DScrollView+.swift"; sourceTree = "<group>"; };
+		3F440AFE28667C7C00AFF325 /* DScrollViewElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DScrollViewElement.swift; sourceTree = "<group>"; };
+		3F440AFF28667C7C00AFF325 /* DScrollViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DScrollViewContainer.swift; sourceTree = "<group>"; };
+		3F440B0028667C7C00AFF325 /* DScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DScrollView.swift; sourceTree = "<group>"; };
+		57A0464A6B097233087B212CF29DD9CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6254FD967B900A75F6FF3A4C7675F000 /* Pods-DScrolViewDv_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DScrolViewDv_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		65EE01908A61FA083996F1187BD38193 /* Pods-DScrolViewDv_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DScrolViewDv_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6EEA1D9C78234A6BC20331ADBCB5A0C2 /* DScrolViewDv.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DScrolViewDv.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6EEA1D9C78234A6BC20331ADBCB5A0C2 /* DScrolViewDv.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DScrolViewDv.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7E3AF703CEEC80F156F022C4B93B8C8F /* Pods-DScrolViewDv_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DScrolViewDv_Tests"; path = Pods_DScrolViewDv_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3AF703CEEC80F156F022C4B93B8C8F /* Pods_DScrolViewDv_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DScrolViewDv_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837CABD8A9675B91B9B298E96290EF5B /* Pods-DScrolViewDv_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DScrolViewDv_Example.modulemap"; sourceTree = "<group>"; };
 		849A644392C42795573CDD0C4B92AC1E /* Pods-DScrolViewDv_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DScrolViewDv_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9392DEEBFA5D8D5574A9DB7F1743099F /* Pods-DScrolViewDv_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DScrolViewDv_Example-frameworks.sh"; sourceTree = "<group>"; };
 		99FC6F0E55BF7E4EEA286078DAD78B5D /* Pods-DScrolViewDv_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DScrolViewDv_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A30AF41EE61CB761017BF3F6C945E317 /* Pods-DScrolViewDv_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DScrolViewDv_Example-umbrella.h"; sourceTree = "<group>"; };
 		ADE6544CDACE13FC51D47FED6690E17B /* DScrolViewDv-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DScrolViewDv-Info.plist"; sourceTree = "<group>"; };
-		B0212B41C9288C671F7E06014609E972 /* DScrolViewDv */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DScrolViewDv; path = DScrolViewDv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0212B41C9288C671F7E06014609E972 /* DScrolViewDv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DScrolViewDv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B3EBEEC833A84E5EF12E5B2899F8A6 /* Pods-DScrolViewDv_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DScrolViewDv_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B38CBA6EA6462C3AE6E598EF403A52C3 /* Pods-DScrolViewDv_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DScrolViewDv_Tests-Info.plist"; sourceTree = "<group>"; };
 		B8B578B37BFA56C9D32B51DD61AB4222 /* Pods-DScrolViewDv_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DScrolViewDv_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFD45639DDC7FB412E7B1E21DD659C6 /* Pods-DScrolViewDv_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DScrolViewDv_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C32F963606C5E05B91A0505547FA67F2 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = DScrolViewDv/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		DE72CA85B93A9B75BB3FF0EB11E495CC /* Pods-DScrolViewDv_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DScrolViewDv_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F43828EA5AA894FD10D3FB295E052412 /* Pods-DScrolViewDv_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DScrolViewDv_Example"; path = Pods_DScrolViewDv_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43828EA5AA894FD10D3FB295E052412 /* Pods_DScrolViewDv_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DScrolViewDv_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C13F80459D4D8CCA0FBA71311C1E50 /* DScrolViewDv.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DScrolViewDv.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,9 +109,9 @@
 		15C784416CF92AE5E8EBE5B5B9A28E1E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0212B41C9288C671F7E06014609E972 /* DScrolViewDv */,
-				F43828EA5AA894FD10D3FB295E052412 /* Pods-DScrolViewDv_Example */,
-				7E3AF703CEEC80F156F022C4B93B8C8F /* Pods-DScrolViewDv_Tests */,
+				B0212B41C9288C671F7E06014609E972 /* DScrolViewDv.framework */,
+				F43828EA5AA894FD10D3FB295E052412 /* Pods_DScrolViewDv_Example.framework */,
+				7E3AF703CEEC80F156F022C4B93B8C8F /* Pods_DScrolViewDv_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +139,17 @@
 			);
 			name = "Pods-DScrolViewDv_Tests";
 			path = "Target Support Files/Pods-DScrolViewDv_Tests";
+			sourceTree = "<group>";
+		};
+		3F440AFC2866785A00AFF325 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3F440B0028667C7C00AFF325 /* DScrollView.swift */,
+				3F440AFD28667C7C00AFF325 /* DScrollView+.swift */,
+				3F440AFF28667C7C00AFF325 /* DScrollViewContainer.swift */,
+				3F440AFE28667C7C00AFF325 /* DScrollViewElement.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4718A6C5D4E6BA335C985D670017AFF4 /* Support Files */ = {
@@ -179,7 +196,7 @@
 		8923D2B576556A4908E5D4EC3A0132CC /* DScrolViewDv */ = {
 			isa = PBXGroup;
 			children = (
-				C32F963606C5E05B91A0505547FA67F2 /* ReplaceMe.swift */,
+				3F440AFC2866785A00AFF325 /* Source */,
 				5424000EDDA0AA777C52602641382490 /* Pod */,
 				4718A6C5D4E6BA335C985D670017AFF4 /* Support Files */,
 			);
@@ -269,7 +286,7 @@
 			);
 			name = "Pods-DScrolViewDv_Tests";
 			productName = Pods_DScrolViewDv_Tests;
-			productReference = 7E3AF703CEEC80F156F022C4B93B8C8F /* Pods-DScrolViewDv_Tests */;
+			productReference = 7E3AF703CEEC80F156F022C4B93B8C8F /* Pods_DScrolViewDv_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		693DABCA0E174802F55D59FCE3835EB2 /* Pods-DScrolViewDv_Example */ = {
@@ -288,7 +305,7 @@
 			);
 			name = "Pods-DScrolViewDv_Example";
 			productName = Pods_DScrolViewDv_Example;
-			productReference = F43828EA5AA894FD10D3FB295E052412 /* Pods-DScrolViewDv_Example */;
+			productReference = F43828EA5AA894FD10D3FB295E052412 /* Pods_DScrolViewDv_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9333D2EFED5F00578EAC3D4B2FE4173D /* DScrolViewDv */ = {
@@ -306,7 +323,7 @@
 			);
 			name = DScrolViewDv;
 			productName = DScrolViewDv;
-			productReference = B0212B41C9288C671F7E06014609E972 /* DScrolViewDv */;
+			productReference = B0212B41C9288C671F7E06014609E972 /* DScrolViewDv.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -317,6 +334,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9333D2EFED5F00578EAC3D4B2FE4173D = {
+						LastSwiftMigration = 1320;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -383,8 +405,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F440B0228667C7C00AFF325 /* DScrollViewElement.swift in Sources */,
+				3F440B0128667C7C00AFF325 /* DScrollView+.swift in Sources */,
+				3F440B0328667C7C00AFF325 /* DScrollViewContainer.swift in Sources */,
+				3F440B0428667C7C00AFF325 /* DScrollView.swift in Sources */,
 				A4B190D54DC5F5EFCBAE72B7B4819BF8 /* DScrolViewDv-dummy.m in Sources */,
-				17C77E71DD1759E1D3F1C46067BB593A /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 396B81FD005F09473C0903DBC20C5047 /* DScrolViewDv.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -422,7 +448,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DScrolViewDv/DScrolViewDv-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DScrolViewDv/DScrolViewDv-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DScrolViewDv/DScrolViewDv.modulemap";
 				PRODUCT_MODULE_NAME = DScrolViewDv;
@@ -430,7 +456,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -487,13 +514,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -503,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24C774A9636FC0D92FF6E912049888DB /* DScrolViewDv.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -515,7 +542,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DScrolViewDv/DScrolViewDv-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DScrolViewDv/DScrolViewDv-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DScrolViewDv/DScrolViewDv.modulemap";
 				PRODUCT_MODULE_NAME = DScrolViewDv;
@@ -523,7 +550,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -547,7 +574,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DScrolViewDv_Example/Pods-DScrolViewDv_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DScrolViewDv_Example/Pods-DScrolViewDv_Example.modulemap";
@@ -581,7 +608,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DScrolViewDv_Tests/Pods-DScrolViewDv_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DScrolViewDv_Tests/Pods-DScrolViewDv_Tests.modulemap";
@@ -652,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -681,7 +708,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DScrolViewDv_Example/Pods-DScrolViewDv_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DScrolViewDv_Example/Pods-DScrolViewDv_Example.modulemap";
@@ -714,7 +741,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-DScrolViewDv_Tests/Pods-DScrolViewDv_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DScrolViewDv_Tests/Pods-DScrolViewDv_Tests.modulemap";
